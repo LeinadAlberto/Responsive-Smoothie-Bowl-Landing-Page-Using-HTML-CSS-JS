@@ -40,13 +40,21 @@ const swiperHome = new Swiper('.home__swiper', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-	/* autoplay: {
+	autoplay: {
 		delay: 3200, 
 		disableOnIteraction: false,
-	} */
+	}
 })
 
 /*=============== CHANGE HEADER STYLES ===============*/
+const scrollHeader = () => {
+   const header = document.getElementById('header')
+   // Add the .scroll-header class if the bottom scroll of the viewport is greater than 50
+   this.scrollY >= 50 ? header.classList.add('scroll-header') 
+                      : header.classList.remove('scroll-header')
+}
+
+window.addEventListener('scroll', scrollHeader)
 
 
 /*=============== GSAP ANIMATION ===============*/
