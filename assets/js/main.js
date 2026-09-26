@@ -40,10 +40,10 @@ const swiperHome = new Swiper('.home__swiper', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-	autoplay: {
+	/* autoplay: {
 		delay: 3200, 
 		disableOnIteraction: false,
-	}
+	} */
 })
 
 /*=============== CHANGE HEADER STYLES ===============*/
