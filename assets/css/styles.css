@@ -474,10 +474,25 @@ img {
 }
 
 /* For lower-end devices <> */
-
+@media (width <= 420px) and (height <= 720px) {
+	.home__slider {
+		height: 780px;
+	}
+}
 
 /* For taller devices <> */
-
+@media (width >= 1536px) and (height >= 864px) {
+	.home__slider {
+		height: 100vh;
+	}
+}
 
 /* For 2K resolutions <> */
-
+@media (width >= 2048px) {
+	.header, 
+	.home__image, 
+	.home__data, 
+	.home__arrows {
+		zoom: 1.3;
+	}
+}
